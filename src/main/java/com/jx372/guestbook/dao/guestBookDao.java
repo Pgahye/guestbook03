@@ -28,7 +28,7 @@ public class guestBookDao {
 			Class.forName("com.mysql.jdbc.Driver");
 			// 2. connection 하기
 
-			String url = "jdbc:mysql://121.138.83.43:3306/webdb?useUnicode=true&characterEncoding=utf8";
+			String url = "jdbc:mysql://192.168.1.34:3306/webdb?useUnicode=true&characterEncoding=utf8";
 			conn = DriverManager.getConnection(url, "webdb", "webdb");
 
 		} catch (ClassNotFoundException e) {
