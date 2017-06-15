@@ -30,13 +30,13 @@ public class GuestbookController {
 	@RequestMapping({"/","/list"})
 	public String list(Model model){
 		
-		List<guestBookVo> list=guestBookDao.getList();
-		model.addAttribute("list", list);
+		//List<guestBookVo> list=guestBookDao.getList();
+		//model.addAttribute("list", list);
 		
-		for(guestBookVo vo : list){
+		//for(guestBookVo vo : list){
 			
 			//System.out.println(vo);
-		}
+		//}
 		
 		return  "/WEB-INF/views/index.jsp";
 	}
